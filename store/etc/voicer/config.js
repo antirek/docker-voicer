@@ -40,7 +40,7 @@ module.exports = {
     lookup: {
         type: 'file',
         options: {
-            dataFile: 'data/peernames.json'
+            dataFile: '/etc/voicer/peernames.json'
         }
     },
     logger: {

@@ -1,9 +1,9 @@
 #!/bin/bash
 
 docker run \
-	-v $(pwd)/store/etc/voicer:/etc/voicer \
-	-e VOICER_CONFIGFILE=/etc/voicer/config.js \
-	--rm \
-	-p 3000:3000 \
-	-p 3100:3100 \
-	-t antirek/voicer 
+    -v $(pwd)/store/etc/voicer:/etc/voicer \
+    -v $(pwd)/store/var/log:/var/log \
+    -e VOICER_CONFIGFILE=/etc/voicer/config \
+    -p "3000:3000" \
+    -p "3100:3100" \
+    -it antirek/voicer voicer

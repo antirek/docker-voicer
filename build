@@ -1,1 +1,1 @@
-docker build -t antirek/voicer .
+docker build --no-cache -t antirek/voicer .
