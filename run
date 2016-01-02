@@ -3,6 +3,7 @@
 docker run \
     -v $(pwd)/store/etc/voicer:/etc/voicer \
     -v $(pwd)/store/var/log:/var/log \
+    -v $(pwd)/store/var/records:/tmp \
     -e VOICER_CONFIGFILE=/etc/voicer/config \
     -p "3000:3000" \
     -p "3100:3100" \
